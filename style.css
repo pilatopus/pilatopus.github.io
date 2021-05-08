@@ -1,0 +1,143 @@
+html {
+  background-color: hsl(233, 47%, 7%);
+  /* width: 1440px; */
+}
+body {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  height: 446px;
+  position: relative;
+}
+.container .sideimg img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.content {
+  /* background-color: orange; */
+  padding: 30px 100px 0px 70px;
+  width: 500px;
+}
+.content h1 {
+  font-size: 40px;
+  /* background-color: green; */
+  color: hsl(0, 0%, 100%);
+  width: 400px;
+}
+.container p {
+  /* background-color: yellowgreen; */
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 300px;
+  font-size: 15px;
+  line-height: 1.6rem;
+}
+
+#insight {
+  color: hsl(277, 64%, 61%);
+}
+.sidecontent {
+  display: flex;
+
+  justify-content: space-between;
+  color: hsla(0, 0%, 100%, 0.6);
+  /* align-items: center; */
+}
+
+.subcontent {
+  /* background-color: orangered; */
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 350px;
+}
+.sideimg {
+  background-color: hsl(277, 64%, 61%);
+  height: 446px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+img {
+  opacity: 0.4;
+}
+.subtext {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+}
+.attribution {
+  color: white;
+  margin: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1100px) {
+  .sidecontent {
+    /* -webkit-flex-direction: column; */
+    flex-direction: column-reverse;
+  }
+  body {
+    margin-top: 10px;
+  }
+  .container {
+    /* background-color: orange; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 540px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .content {
+    /* background-color: green; */
+    display: flex;
+    width: 350px;
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content p {
+    text-align: center;
+    padding-left: 30px;
+    font-size: 20px;
+  }
+  .sideimg {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+  }
+
+  #mobileviewimg {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .subcontent {
+    /* background-color: chartreuse; */
+    margin-top: 0;
+    flex-direction: column;
+    height: auto;
+    width: 320px;
+    padding: 0px 20px 20px 20px;
+  }
+}
